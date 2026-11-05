@@ -16,7 +16,7 @@ export function BrandBand({ children, circuitPosition = 'bottom', style }: Brand
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.band, { paddingTop: insets.top + spacing.sm }, style]}>
-      <Svg style={StyleSheet.absoluteFill} preserveAspectRatio="none">
+      <Svg style={StyleSheet.absoluteFill} width="100%" height="100%" preserveAspectRatio="none">
         <Defs>
           <LinearGradient id="band" x1="0" y1="0" x2="1" y2="1">
             <Stop offset="0" stopColor={palette.navy} />
